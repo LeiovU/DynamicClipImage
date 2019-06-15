@@ -18,6 +18,9 @@
 - (void)viewDidLoad {
     
     
+    NSLog(@"我来了");
+    NSString *hh = @"oo";
+    NSLog(@"--%@--",hh);
     
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
