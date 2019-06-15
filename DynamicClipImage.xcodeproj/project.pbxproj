@@ -15,6 +15,8 @@
 		2251CEB022AF8191008D7029 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 2251CEAF22AF8191008D7029 /* main.m */; };
 		2251CEBA22AF8191008D7029 /* DynamicClipImageTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2251CEB922AF8191008D7029 /* DynamicClipImageTests.m */; };
 		2251CEC522AF8192008D7029 /* DynamicClipImageUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 2251CEC422AF8192008D7029 /* DynamicClipImageUITests.m */; };
+		2251CED422AF8516008D7029 /* ImageCutView.m in Sources */ = {isa = PBXBuildFile; fileRef = 2251CED322AF8516008D7029 /* ImageCutView.m */; };
+		2251CED722AF8966008D7029 /* UIImage+Util.m in Sources */ = {isa = PBXBuildFile; fileRef = 2251CED622AF8966008D7029 /* UIImage+Util.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +53,10 @@
 		2251CEC022AF8192008D7029 /* DynamicClipImageUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DynamicClipImageUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2251CEC422AF8192008D7029 /* DynamicClipImageUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DynamicClipImageUITests.m; sourceTree = "<group>"; };
 		2251CEC622AF8192008D7029 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2251CED222AF8516008D7029 /* ImageCutView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ImageCutView.h; sourceTree = "<group>"; };
+		2251CED322AF8516008D7029 /* ImageCutView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ImageCutView.m; sourceTree = "<group>"; };
+		2251CED522AF8966008D7029 /* UIImage+Util.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImage+Util.h"; sourceTree = "<group>"; };
+		2251CED622AF8966008D7029 /* UIImage+Util.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImage+Util.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -105,6 +111,10 @@
 				2251CEA122AF818F008D7029 /* AppDelegate.m */,
 				2251CEA322AF818F008D7029 /* ViewController.h */,
 				2251CEA422AF818F008D7029 /* ViewController.m */,
+				2251CED222AF8516008D7029 /* ImageCutView.h */,
+				2251CED322AF8516008D7029 /* ImageCutView.m */,
+				2251CED522AF8966008D7029 /* UIImage+Util.h */,
+				2251CED622AF8966008D7029 /* UIImage+Util.m */,
 				2251CEA622AF818F008D7029 /* Main.storyboard */,
 				2251CEA922AF8191008D7029 /* Assets.xcassets */,
 				2251CEAB22AF8191008D7029 /* LaunchScreen.storyboard */,
@@ -264,7 +274,9 @@
 			files = (
 				2251CEA522AF818F008D7029 /* ViewController.m in Sources */,
 				2251CEB022AF8191008D7029 /* main.m in Sources */,
+				2251CED722AF8966008D7029 /* UIImage+Util.m in Sources */,
 				2251CEA222AF818F008D7029 /* AppDelegate.m in Sources */,
+				2251CED422AF8516008D7029 /* ImageCutView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -435,14 +447,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5W9992SXY;
 				INFOPLIST_FILE = DynamicClipImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.csii.DynamicClipImage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.csii.DynamicClipImagePP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -451,14 +467,18 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = K5W9992SXY;
 				INFOPLIST_FILE = DynamicClipImage/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.csii.DynamicClipImage;
+				PRODUCT_BUNDLE_IDENTIFIER = com.csii.DynamicClipImagePP;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
